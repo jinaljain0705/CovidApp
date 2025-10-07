@@ -67,6 +67,7 @@ Not intended as medical advice.
 
 # preview 
 ![trackingApp](Output/trackingApp.png)
+![result](Output/result.png)
 
 # 👨‍💻 Author
 Jinal Jain
