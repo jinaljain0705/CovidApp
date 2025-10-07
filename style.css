@@ -1,0 +1,12 @@
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#country-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#country-list::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 4px;
+}

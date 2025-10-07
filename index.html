@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global COVID-19 Tracker</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen p-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-indigo-400 mb-2">
+                🌍 Global COVID-19 Tracker
+            </h1>
+            <p id="last-updated" class="text-gray-400">Fetching latest data...</p>
+        </header>
+
+        <!-- Global-Stats -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-200 mb-4 flex items-center gap-2">
+                🌐 Global Summary
+            </h2>
+            <div id="global-stats" class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-gray-800 h-24 animate-pulse rounded-lg"></div>
+                <div class="bg-gray-800 h-24 animate-pulse rounded-lg"></div>
+                <div class="bg-gray-800 h-24 animate-pulse rounded-lg"></div>
+                <div class="bg-gray-800 h-24 animate-pulse rounded-lg"></div>
+            </div>
+        </section>
+
+        <!-- Search-Section -->
+        <section class="mt-10">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-indigo-400 text-2xl">🔍</span>
+                <input id="search-input" type="text" placeholder="Search country..."
+                    class="w-full bg-gray-800 text-gray-200 placeholder-gray-500 p-3 rounded-lg outline-none border border-gray-700 focus:border-indigo-500 transition" />
+            </div>
+
+            <!-- Countries-List -->
+            <div id="country-list"
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-gray-800/50 p-4 rounded-lg max-h-[70vh] overflow-y-auto">
+                <div class="col-span-full text-center text-gray-400">Loading data...</div>
+            </div>
+        </section>
+
+        <!-- Error-Message -->
+        <div id="error-message" class="hidden mt-6 p-4 bg-red-800 text-red-200 rounded-lg">
+            ❌ Error fetching data. Please refresh the page.
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
