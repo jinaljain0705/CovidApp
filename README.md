@@ -65,5 +65,8 @@ Data is provided by disease.sh API.
 
 Not intended as medical advice.
 
+# preview 
+![trackingApp](Output/trackingApp.png)
+
 # 👨‍💻 Author
 Jinal Jain
