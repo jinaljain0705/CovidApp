@@ -43,7 +43,7 @@ No backend setup is required.
 global-covid-tracker/
 │
 ├── index.html        # Main HTML file
-├── style.css         # Tailwind + custom styles
+├── tailwindcss       # Tailwind 
 ├── script.js         # JavaScript for fetching and rendering data
 └── README.md         # Project documentation
 ```
